@@ -4,7 +4,7 @@ import { Button } from "@chakra-ui/core";
 import useRequest from "../../hooks/useRequest";
 
 const List = () => {
-  const { data, error } = useRequest({
+  const { data } = useRequest({
     url:
       "https://gateway.marvel.com:443/v1/public/characters?apikey=2f1fed568f42c3ac72c3e50846da7949"
   });
