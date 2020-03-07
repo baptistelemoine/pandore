@@ -9,9 +9,12 @@ const Details = () => {
   const [store, setStore] = useLocalStorage("favorites");
   const params = useParams();
   const id = parseInt(params.id);
-  const { data } = useRequest({
-    url: `https://gateway.marvel.com:443/v1/public/characters/${id}?apikey=2f1fed568f42c3ac72c3e50846da7949`
-  });
+  const { data } = useRequest(
+    {
+      url: `https://gateway.marvel.com:443/v1/public/characters/${id}?apikey=2f1fed568f42c3ac72c3e50846da7949`
+    },
+    { suspense: true }
+  );
   const renderFavoriteCta = () => {
     if (store && store.includes(id)) {
       return (

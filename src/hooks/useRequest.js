@@ -12,8 +12,7 @@ export default function useRequest(request, { initialData, ...config } = {}) {
         statusText: "InitialData",
         headers: {},
         data: initialData
-      },
-      suspense: true
+      }
     }
   );
 
