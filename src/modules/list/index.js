@@ -1,8 +1,7 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import ListItem from "../common/ListItem";
 import { Button } from "@chakra-ui/core";
 import useRequest from "../../hooks/useRequest";
-import SuspenseFallback from "../common/SuspenseFallback";
 import { useSWRPages } from "swr";
 
 const List = () => {
