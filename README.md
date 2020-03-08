@@ -7,7 +7,7 @@ The api acts mainly as a proxy, it remains public but marvel api keys are not sh
 
 ## Installation
 
-Clone repository and use docker to run all the things
+Clone repository and use docker to run all the things, or simply install dependencies and run `npm start` on each folder.
 
 ```sh
     git clone git@github.com:baptistelemoine/pandore.git marvel-app
