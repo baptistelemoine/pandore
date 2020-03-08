@@ -1,0 +1,7 @@
+{
+  "port": "9000",
+  "logLevel": "debug",
+  "marvelApi": "https://gateway.marvel.com:443/v1/public",
+  "publicKey": "2f1fed568f42c3ac72c3e50846da7949",
+  "privateKey": "1cd9f577d2dfdd23b6721ec5f3c962d62037c656"
+}

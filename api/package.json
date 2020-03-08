@@ -1,0 +1,46 @@
+{
+  "name": "marvel-api",
+  "version": "0.1.0",
+  "description": "Marvel API",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --config .eslintrc ./test ./realtime ./app",
+    "start": "node index.js"
+  },
+  "author": "Baptiste Lemoine",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "@sigfox/koa-boom": "^1.0.1",
+    "@sigfox/koa-error-handler": "^1.0.1",
+    "@sigfox/koa-joi-validate": "^1.0.1",
+    "agentkeepalive": "^4.1.0",
+    "bcrypt": "^1.0.2",
+    "boom": "^4.2.0",
+    "figc": "0.0.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "joi": "10.6.x",
+    "joi-objectid": "^2.0.0",
+    "joi-to-json-schema": "^3.0.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compose": "git://github.com/sigfox/compose#expose-middleware",
+    "koa-logger": "^2.0.0",
+    "koa-mount": "^2.0.0",
+    "koa-qs": "git://github.com/sigfox/qs#update-deps",
+    "koa-router": "^7.0.1",
+    "koa-static": "^3.0.0",
+    "lodash": "https://registry.npmjs.org/lodash/-/lodash-4.17.2.tgz",
+    "mjml": "^3.3.0",
+    "request": "https://registry.npmjs.org/request/-/request-2.81.0.tgz",
+    "request-promise-native": "^1.0.3",
+    "superconsole": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-sigfox": "^0.2.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-restricted-globals": "^0.1.1",
+    "nodemon": "^1.18.4"
+  }
+}
