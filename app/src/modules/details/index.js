@@ -11,7 +11,7 @@ const Details = () => {
   const id = parseInt(params.id);
   const { data } = useRequest(
     {
-      url: `https://gateway.marvel.com:443/v1/public/characters/${id}?apikey=2f1fed568f42c3ac72c3e50846da7949`
+      url: `http://localhost:9000/api/characters/${id}`
     },
     { suspense: true }
   );

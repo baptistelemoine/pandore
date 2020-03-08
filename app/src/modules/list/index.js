@@ -9,8 +9,7 @@ const List = () => {
   const { pages, isLoadingMore, isReachingEnd, loadMore } = useSWRPages(
     "list",
     ({ offset, withSWR }) => {
-      const url = `https://gateway.marvel.com:443/v1/public/characters?apikey=2f1fed568f42c3ac72c3e50846da7949&offset=${offset ||
-        0}`;
+      const url = `http://localhost:9000/api/characters?offset=${offset || 0}`;
       const { data } = withSWR(useRequest({ url }, { suspense: !offset }));
       if (!data) return null;
       const { results } = data.data;
