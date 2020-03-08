@@ -60,6 +60,7 @@ const Details = () => {
             href="https://chakra-ui.com"
             onClick={handleFavoriteClick}
             isExternal
+            data-test="detail-toggle-favorite"
           >
             {renderFavoriteCta()}
           </Button>

@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "npx cypress run --browser chrome",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^5.3.0",
+    "cypress": "^4.1.0",
+    "cypress-testing-library": "^4.0.0"
   }
 }

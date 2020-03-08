@@ -18,10 +18,15 @@ const ListItem = ({
     else setStore([...(store || []), id]);
   };
   return (
-    <Flex alignItems="center" mb={6}>
+    <Flex alignItems="center" mb={6} data-test="list-item">
       <Avatar src={`${path}/standard_medium.${extension}`} />
       <Box ml={4} width="100%">
-        <Link as={routerLink} to={`/details/${id}`} color="gray.900">
+        <Link
+          as={routerLink}
+          to={`/details/${id}`}
+          color="gray.900"
+          data-test="link-item"
+        >
           {name}
         </Link>
         <Box color="gray.500" letterSpacing="wide" fontSize="sm" mt={1}>
