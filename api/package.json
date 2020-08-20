@@ -14,7 +14,7 @@
     "@sigfox/koa-error-handler": "^1.0.1",
     "@sigfox/koa-joi-validate": "^1.0.1",
     "agentkeepalive": "^4.1.0",
-    "bcrypt": "^1.0.2",
+    "bcrypt": "^5.0.0",
     "boom": "^4.2.0",
     "figc": "0.0.3",
     "isomorphic-unfetch": "^3.0.0",
